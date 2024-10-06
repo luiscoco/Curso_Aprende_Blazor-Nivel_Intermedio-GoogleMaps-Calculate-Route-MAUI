@@ -298,3 +298,5 @@ See this publication for more info:
 
 https://github.com/luiscoco/Curso_Aprende_Blazor-Nivel_Intermedio-GoogleMaps-SimpleMap-MAUI
 
+![image](https://github.com/user-attachments/assets/de94fc40-d816-4ed5-8bde-f983da747c13)
+
