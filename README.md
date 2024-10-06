@@ -300,3 +300,7 @@ https://github.com/luiscoco/Curso_Aprende_Blazor-Nivel_Intermedio-GoogleMaps-Sim
 
 ![image](https://github.com/user-attachments/assets/de94fc40-d816-4ed5-8bde-f983da747c13)
 
+![image](https://github.com/user-attachments/assets/e782d2da-df72-4b25-bfeb-e310ccaca141)
+
+![image](https://github.com/user-attachments/assets/227afa65-0902-498e-95a8-50442dbd1431)
+
