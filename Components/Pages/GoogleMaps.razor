@@ -1,0 +1,79 @@
+﻿@page "/googleMaps"
+@inject IJSRuntime JSRuntime
+
+<h3>Google Maps with Draggable Directions and Distance Calculation</h3>
+
+<div id="floating-panel" style="display: flex; align-items: center; gap: 10px;">
+    <!-- Start and End Input Boxes, and Buttons on the Same Line -->
+    <div>
+        <b>Start: </b>
+        <input type="text" id="start" placeholder="Enter start location" />
+    </div>
+    <div style="margin-left: 20px;">
+        <b>End: </b>
+        <input type="text" id="end" placeholder="Enter destination" />
+    </div>
+    <div style="margin-left: 20px; display: flex; gap: 10px;">
+        <!-- Show Route and Clear Route Buttons with space between them -->
+        <button class="btn btn-primary" @onclick="ShowRoute">Show Route</button>
+        <button class="btn btn-danger" @onclick="ClearRoute">Clear Route</button>
+    </div>
+</div>
+
+<!-- Blank Rows -->
+<div style="height: 20px;"></div>
+
+<!-- Waypoints Section -->
+<div>
+    <div id="waypoints"></div>
+
+    <!-- Blank Row between Waypoint input and Add Waypoint Button -->
+    <div style="height: 20px;"></div>
+
+    <!-- Button to Add Waypoint -->
+    <button class="btn btn-secondary" @onclick="AddWaypoint">Add Waypoint</button>
+</div>
+
+<!-- Blank Rows -->
+<div style="height: 20px;"></div>
+
+<!-- Map and Sidebar Container -->
+<div id="container">
+    <div id="map" style="height: 400px; width: 100%;"></div>
+    <div id="sidebar">
+        <p>Total Distance: <span id="total"></span></p>
+        <div id="panel"></div>
+    </div>
+</div>
+
+@code {
+    private int waypointCounter = 0;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Initialize the map on first render without displaying the route
+            await JSRuntime.InvokeVoidAsync("initMap");
+        }
+    }
+
+    private async Task AddWaypoint()
+    {
+        // Call JavaScript to dynamically add a new waypoint input field
+        waypointCounter++;
+        await JSRuntime.InvokeVoidAsync("addWaypoint", waypointCounter);
+    }
+
+    private async Task ShowRoute()
+    {
+        // Call JavaScript to calculate and display the route
+        await JSRuntime.InvokeVoidAsync("showRoute");
+    }
+
+    private async Task ClearRoute()
+    {
+        // Call JavaScript to clear the route and input fields
+        await JSRuntime.InvokeVoidAsync("clearRoute");
+    }
+}
