@@ -145,7 +145,9 @@ Include this code in the index.html
         defer></script>
 ```
 
-For creating the **Google Maps API Key** see this publication for more info: https://github.com/luiscoco/Curso_Aprende_Blazor-Nivel_Intermedio-GoogleMaps-SimpleMap-MAUI
+For creating the **Google Maps API Key** see this publication for more info: 
+
+https://github.com/luiscoco/Curso_Aprende_Blazor-Nivel_Intermedio-GoogleMaps-SimpleMap-MAUI
 
 See the modified **index.html** file:
 
