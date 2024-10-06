@@ -280,11 +280,21 @@ Add this code in the **GoogleMaps.razor**
 
 ## 6. Run the appplication in Windows Desktop
 
-See this publication for more info: https://github.com/luiscoco/Curso_Aprende_Blazor-Nivel_Intermedio-GoogleMaps-SimpleMap-MAUI
+See this publication for more info: 
 
+https://github.com/luiscoco/Curso_Aprende_Blazor-Nivel_Intermedio-GoogleMaps-SimpleMap-MAUI
 
+![image](https://github.com/user-attachments/assets/ebe1ee39-b939-4314-b793-4a7b6ad18975)
+
+![image](https://github.com/user-attachments/assets/51ab82a1-71b1-4ce2-b86d-1bd08e95f4ac)
+
+![image](https://github.com/user-attachments/assets/a48ae2e1-25e0-4356-a4ac-a6c65587f531)
+
+![image](https://github.com/user-attachments/assets/aa10c9e3-e3a2-4698-b0e3-0a84675f55a4)
 
 ## 7. Run the application in your Mobile Device
 
-See this publication for more info: https://github.com/luiscoco/Curso_Aprende_Blazor-Nivel_Intermedio-GoogleMaps-SimpleMap-MAUI
+See this publication for more info: 
+
+https://github.com/luiscoco/Curso_Aprende_Blazor-Nivel_Intermedio-GoogleMaps-SimpleMap-MAUI
 
